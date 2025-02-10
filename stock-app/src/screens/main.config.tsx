@@ -9,7 +9,7 @@ export function ConfigScreen() {
   return (
     <Content>
       <ScrollView style={{ flex : 1, padding : 15 }} >
-        <Button onPress={logout} appearance='outline' >로그아웃</Button>
+        <Button onPress={logout} appearance='outline' >로그아웃!!</Button>
         <Text>asdsd</Text>
       </ScrollView>
     </Content>
