@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "push:dev": "pnpm build --mode dev && docker build -t sf12go/stock-web:dev -f docker/Dockerfile . && docker push sf12go/stock-web:dev"
   },
   "dependencies": {
     "react": "^19.0.0",
