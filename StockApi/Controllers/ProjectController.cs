@@ -18,7 +18,7 @@ namespace StockApi.Controllers
         [HttpPost("create")]
         public IActionResult Create(CreateProjectRequest request) 
         {
-            return Ok(_context.CreateProject(request.Name, request.MasterUrl, request.MappingUrl));
+            return Ok(_context.CreateProject(request.Name, request.MasterUrl, request.MatchUrl));
         }
 
         [HttpGet("info-list")]

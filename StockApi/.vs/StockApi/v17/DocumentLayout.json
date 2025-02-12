@@ -1,89 +1,93 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\stock\\StockApi\\",
+  "WorkspaceRootPath": "D:\\02.projects\\stock\\StockApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\entities\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:entities\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\data\\filecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:data\\filecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\middleware\\webapplicationbuilderex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:middleware\\webapplicationbuilderex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\data\\stockcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:data\\stockcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\controllers\\workcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\controllers\\workcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:controllers\\workcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\dto\\updateworkrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:dto\\updateworkrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\entities\\projectstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:entities\\projectstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\data\\stockcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:data\\stockcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\dto\\createprojectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:dto\\createprojectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\entities\\projectinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\entities\\projectinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:entities\\projectinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\entities\\barcoderaw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:entities\\barcoderaw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\entities\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:entities\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\entities\\fileinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\entities\\fileinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:entities\\fileinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\stockapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:stockapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\entities\\projectstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:entities\\projectstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\middleware\\datetimeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:middleware\\datetimeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\dto\\createprojectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:dto\\createprojectrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\utils\\kortime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:utils\\kortime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\data\\ftpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\data\\ftpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:data\\ftpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\stock\\stockapi\\stockapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\data\\filecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:data\\filecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\middleware\\webapplicationbuilderex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:middleware\\webapplicationbuilderex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\dto\\updateworkrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:dto\\updateworkrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\entities\\barcoderaw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:entities\\barcoderaw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\entities\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:entities\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\stockapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:stockapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\middleware\\datetimeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:middleware\\datetimeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\utils\\kortime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:utils\\kortime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|d:\\02.projects\\stock\\stockapi\\stockapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{7C004B50-F892-4239-9202-32E5629876B1}|StockApi.csproj|solutionrelative:stockapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
@@ -94,51 +98,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Work.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Entities\\Work.cs",
+              "RelativeDocumentMoniker": "Entities\\Work.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Entities\\Work.cs",
+              "RelativeToolTip": "Entities\\Work.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T04:38:18.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MasterController.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Controllers\\MasterController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MasterController.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Controllers\\MasterController.cs",
+              "RelativeToolTip": "Controllers\\MasterController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvx0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T08:13:30.367Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ProjectController.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Controllers\\ProjectController.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Controllers\\ProjectController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProjectController.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Controllers\\ProjectController.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Controllers\\ProjectController.cs",
               "RelativeToolTip": "Controllers\\ProjectController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T06:55:27.084Z"
+              "WhenOpened": "2025-01-13T06:55:27.084Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WorkController.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Controllers\\WorkController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WorkController.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Controllers\\WorkController.cs",
-              "RelativeToolTip": "Controllers\\WorkController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ProjectInfo.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Entities\\ProjectInfo.cs",
+              "RelativeDocumentMoniker": "Entities\\ProjectInfo.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Entities\\ProjectInfo.cs",
+              "RelativeToolTip": "Entities\\ProjectInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T08:16:14.124Z"
+              "WhenOpened": "2025-01-13T06:48:41.412Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StockContext.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Data\\StockContext.cs",
-              "RelativeDocumentMoniker": "Data\\StockContext.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Data\\StockContext.cs",
-              "RelativeToolTip": "Data\\StockContext.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAawGcAAAANAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "FtpSettings.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Data\\FtpSettings.cs",
+              "RelativeDocumentMoniker": "Data\\FtpSettings.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Data\\FtpSettings.cs",
+              "RelativeToolTip": "Data\\FtpSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T06:58:52.583Z"
+              "WhenOpened": "2025-01-13T07:00:53.28Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "UpdateWorkRequest.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Dto\\UpdateWorkRequest.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Dto\\UpdateWorkRequest.cs",
               "RelativeDocumentMoniker": "Dto\\UpdateWorkRequest.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Dto\\UpdateWorkRequest.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Dto\\UpdateWorkRequest.cs",
               "RelativeToolTip": "Dto\\UpdateWorkRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -146,23 +183,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "WorkController.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Controllers\\WorkController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WorkController.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Controllers\\WorkController.cs",
+              "RelativeToolTip": "Controllers\\WorkController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T07:04:06.318Z"
+              "WhenOpened": "2025-01-13T08:16:14.124Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "StockContext.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Data\\StockContext.cs",
+              "RelativeDocumentMoniker": "Data\\StockContext.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Data\\StockContext.cs",
+              "RelativeToolTip": "Data\\StockContext.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAiwLMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T06:58:52.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateProjectRequest.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Dto\\CreateProjectRequest.cs",
+              "RelativeDocumentMoniker": "Dto\\CreateProjectRequest.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Dto\\CreateProjectRequest.cs",
+              "RelativeToolTip": "Dto\\CreateProjectRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T06:58:08.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FileContext.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Data\\FileContext.cs",
+              "RelativeDocumentMoniker": "Data\\FileContext.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Data\\FileContext.cs",
+              "RelativeToolTip": "Data\\FileContext.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwDgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T06:28:00.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectState.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Entities\\ProjectState.cs",
+              "RelativeDocumentMoniker": "Entities\\ProjectState.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Entities\\ProjectState.cs",
+              "RelativeToolTip": "Entities\\ProjectState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T06:50:32.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FileInfo.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Entities\\FileInfo.cs",
+              "RelativeDocumentMoniker": "Entities\\FileInfo.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Entities\\FileInfo.cs",
+              "RelativeToolTip": "Entities\\FileInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T06:49:00.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\stock\\StockApi\\appsettings.json",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\stock\\StockApi\\appsettings.json",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -171,48 +274,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MasterController.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Controllers\\MasterController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MasterController.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Controllers\\MasterController.cs",
-              "RelativeToolTip": "Controllers\\MasterController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T08:13:30.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T07:04:06.318Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateProjectRequest.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Dto\\CreateProjectRequest.cs",
-              "RelativeDocumentMoniker": "Dto\\CreateProjectRequest.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Dto\\CreateProjectRequest.cs",
-              "RelativeToolTip": "Dto\\CreateProjectRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T06:58:08.937Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FileContext.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Data\\FileContext.cs",
-              "RelativeDocumentMoniker": "Data\\FileContext.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Data\\FileContext.cs",
-              "RelativeToolTip": "Data\\FileContext.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAIwDwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T06:28:00.349Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "WebApplicationBuilderEx.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Middleware\\WebApplicationBuilderEx.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Middleware\\WebApplicationBuilderEx.cs",
               "RelativeDocumentMoniker": "Middleware\\WebApplicationBuilderEx.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Middleware\\WebApplicationBuilderEx.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Middleware\\WebApplicationBuilderEx.cs",
               "RelativeToolTip": "Middleware\\WebApplicationBuilderEx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -220,11 +298,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -232,23 +310,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProjectInfo.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Entities\\ProjectInfo.cs",
-              "RelativeDocumentMoniker": "Entities\\ProjectInfo.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Entities\\ProjectInfo.cs",
-              "RelativeToolTip": "Entities\\ProjectInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T06:48:41.412Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "BarcodeRaw.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Entities\\BarcodeRaw.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Entities\\BarcodeRaw.cs",
               "RelativeDocumentMoniker": "Entities\\BarcodeRaw.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Entities\\BarcodeRaw.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Entities\\BarcodeRaw.cs",
               "RelativeToolTip": "Entities\\BarcodeRaw.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -256,11 +322,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Auth.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Entities\\Auth.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Entities\\Auth.cs",
               "RelativeDocumentMoniker": "Entities\\Auth.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Entities\\Auth.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Entities\\Auth.cs",
               "RelativeToolTip": "Entities\\Auth.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -268,35 +334,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProjectState.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Entities\\ProjectState.cs",
-              "RelativeDocumentMoniker": "Entities\\ProjectState.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Entities\\ProjectState.cs",
-              "RelativeToolTip": "Entities\\ProjectState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T06:50:32.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FileInfo.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Entities\\FileInfo.cs",
-              "RelativeDocumentMoniker": "Entities\\FileInfo.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Entities\\FileInfo.cs",
-              "RelativeToolTip": "Entities\\FileInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T06:49:00.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "DateTimeConverter.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Middleware\\DateTimeConverter.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Middleware\\DateTimeConverter.cs",
               "RelativeDocumentMoniker": "Middleware\\DateTimeConverter.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Middleware\\DateTimeConverter.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Middleware\\DateTimeConverter.cs",
               "RelativeToolTip": "Middleware\\DateTimeConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -304,11 +346,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "StockApi.csproj",
-              "DocumentMoniker": "D:\\stock\\StockApi\\StockApi.csproj",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\StockApi.csproj",
               "RelativeDocumentMoniker": "StockApi.csproj",
-              "ToolTip": "D:\\stock\\StockApi\\StockApi.csproj",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\StockApi.csproj",
               "RelativeToolTip": "StockApi.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -316,11 +358,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "KorTime.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Utils\\KorTime.cs",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\Utils\\KorTime.cs",
               "RelativeDocumentMoniker": "Utils\\KorTime.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Utils\\KorTime.cs",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\Utils\\KorTime.cs",
               "RelativeToolTip": "Utils\\KorTime.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -328,23 +370,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FtpSettings.cs",
-              "DocumentMoniker": "D:\\stock\\StockApi\\Data\\FtpSettings.cs",
-              "RelativeDocumentMoniker": "Data\\FtpSettings.cs",
-              "ToolTip": "D:\\stock\\StockApi\\Data\\FtpSettings.cs",
-              "RelativeToolTip": "Data\\FtpSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T07:00:53.28Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "StockApi",
-              "DocumentMoniker": "D:\\stock\\StockApi\\StockApi.csproj",
+              "DocumentMoniker": "D:\\02.projects\\stock\\StockApi\\StockApi.csproj",
               "RelativeDocumentMoniker": "StockApi.csproj",
-              "ToolTip": "D:\\stock\\StockApi\\StockApi.csproj",
+              "ToolTip": "D:\\02.projects\\stock\\StockApi\\StockApi.csproj",
               "RelativeToolTip": "StockApi.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-01-13T06:49:20.665Z"

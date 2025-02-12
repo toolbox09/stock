@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StockApi.Data;
 using StockApi.Dto;
+using StockApi.Entities;
+using System.Diagnostics.Metrics;
 
 namespace StockApi.Controllers
 {
@@ -13,6 +15,18 @@ namespace StockApi.Controllers
         public WorkController(StockContext context) 
         {
             _context = context;
+        }
+
+        [HttpGet()]
+        public IActionResult Index(string projectName, string masterUrl)
+        {
+            var work = new Work
+            {
+                Id = NanoidDotNet.Nanoid.Generate(),
+                ProjectName = projectName,
+                Master = _context.GetMaster(masterUrl),
+            };
+            return Ok(work);
         }
 
         [HttpPost("update")]

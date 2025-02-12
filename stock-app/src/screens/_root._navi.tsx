@@ -4,6 +4,7 @@ type Stacks = {
   Main : undefined,
   NewProj : undefined;
   Ble : undefined;
+  NewWork : undefined;
 }
 
 const { Stack, useNavi } = createStackNavi<Stacks>();

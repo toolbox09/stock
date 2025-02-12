@@ -2,11 +2,8 @@ import { StyleSheet } from 'react-native';
 import { Button, Icon } from '@ui-kitten/components'
 import {  useNavi } from '../_root._navi';
 
-interface NewProjFabProps {
-}
 
-
-export function NewProjFab( { } : NewProjFabProps ) {
+export function NewWorkFab() {
   const { navi } = useNavi();
   return (
   <Button
@@ -14,9 +11,9 @@ export function NewProjFab( { } : NewProjFabProps ) {
       name='plus-outline'
     />}
     style={styles.fabStyle}
-    onPress={()=> navi.navigate("NewProj") }
+    onPress={()=> navi.navigate('NewWork') }
   >
-    프로젝트 등록
+    작업등록
   </Button>
   )
 }

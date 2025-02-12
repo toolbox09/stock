@@ -1,11 +1,11 @@
 import { Sheet, SectionSheet } from '../internal';
-
+import { KeyNum } from './key-num';
 
 export interface Work {
   id : string;
   projectName : string;
-  masterUrl? : string;
-  mappingUrl? : string;
+  master? : KeyNum;
+  // match? : KeyNum;
   sections : SectionSheet;
 }
 

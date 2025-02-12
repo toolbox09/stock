@@ -6,6 +6,6 @@
         public string Name { get; set; }
         public DateTime Created { get; set; }
         public string MasterUrl { get; set; }
-        public string MappingUrl { get; set; }
+        public string MatchUrl { get; set; }
     }
 }

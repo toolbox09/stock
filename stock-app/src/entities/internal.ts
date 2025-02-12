@@ -3,3 +3,8 @@ export * from './src/sheet';
 export * from './src/barcode';
 export * from './src/section';
 export * from './src/file-info';
+export * from './src/project-info';
+export * from './src/project-state';
+export * from './src/master';
+export * from './src/work';
+export * from './src/utils';

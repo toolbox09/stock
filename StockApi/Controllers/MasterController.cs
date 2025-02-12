@@ -21,6 +21,12 @@ namespace StockApi.Controllers
             return Ok(_context.GetMasterFileList());
         }
 
+        [HttpGet("match-file-list")]
+        public IActionResult MatchFileList() 
+        {
+            return Ok(_context.GetMatchFileList());
+        }
+
         [HttpGet]
         public IActionResult Index(string fileName)
         {

@@ -65,7 +65,7 @@ namespace StockApi.Data
 
         #region project
 
-        public bool CreateProject(string projectName, string masterUrl, string mappingUrl) 
+        public bool CreateProject(string projectName, string masterUrl, string matchUrl) 
         {
             var path = GetProjectPath(projectName);
             var state =_client.CreateDirectory(path);
@@ -77,7 +77,7 @@ namespace StockApi.Data
                 Id = Nanoid.Generate(),
                 Name = projectName,
                 MasterUrl = masterUrl,
-                MappingUrl = mappingUrl,
+                MatchUrl = matchUrl,
                 Created = KorTime.Now,
             };
 
@@ -186,6 +186,20 @@ namespace StockApi.Data
                 maps.TryAdd(barcode, 1);
             }
             return maps;
+        }
+
+        public List<FileInfo> GetMatchFileList()
+        {
+            var list = new List<FileInfo>();
+            var targets = _client.GetListing(GetMatchPath());
+            foreach (var target in targets)
+            {
+                if (target.Type == FtpObjectType.File)
+                {
+                    list.Add(new FileInfo { Name = target.Name, Modified = target.Modified });
+                }
+            }
+            return list;
         }
 
         #endregion

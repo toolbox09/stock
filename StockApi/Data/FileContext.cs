@@ -32,8 +32,9 @@ namespace StockApi.Data
         #region path
 
         public string projectPath = "projects";
-        public string masterPath = "masters";
-        public string authPath = "users";
+        public string masterPath = "master";
+        public string authPath = "auth";
+        public string matchPath = "match";
 
         public string GetProjectPath()
             => $"/{projectPath}/";
@@ -52,6 +53,9 @@ namespace StockApi.Data
 
         public string GetUsersPath()
             => $"{authPath}/users.csv";
+
+        public string GetMatchPath()
+            => $"{matchPath}/";
 
 
         #endregion
