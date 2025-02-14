@@ -1,4 +1,6 @@
-﻿namespace StockApi.Entities
+﻿using System.Collections.Generic;
+
+namespace StockApi.Entities
 {
     public class BarcodeRaw
     {
@@ -34,6 +36,48 @@
                 list.Add(new BarcodeRaw { Barcode = pair.Key, Count = pair.Value });
             }
             return list;
+        }
+
+        public class Match 
+        {
+            public string Barcode { get; set; }
+            public int TargetCount { get; set; }
+            public int Count { get; set; }
+        }
+
+        public static List<Match> MatchList(List<BarcodeRaw> matchs, List<BarcodeRaw> merges)
+        {
+            var matchList = new List<Match>();
+            foreach (var match in matchs) 
+            {
+                var merge = merges.FirstOrDefault(_ => _.Barcode == match.Barcode, null);
+                var result = new Match
+                {
+                    Barcode = match.Barcode,
+                    TargetCount = match.Count,
+                    Count = merge != null ? merge.Count : 0,
+                };
+                matchList.Add(result);
+
+                if (merge != null)
+                {
+                    merges.Remove(merge);
+                }
+            }
+
+            foreach (var merge in merges) 
+            {
+                var result = new Match
+                {
+                    Barcode = merge.Barcode,
+                    TargetCount = 0,
+                    Count = merge.Count,
+                };
+                matchList.Add(result);
+            }
+
+            return matchList;
+
         }
 
         #endregion

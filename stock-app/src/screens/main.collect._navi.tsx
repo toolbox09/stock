@@ -5,7 +5,8 @@ type Stacks = {
   Section : { workId : string };
   SectionForm : { workId : string, sectionId : string };
   Barcode : { workId : string, sectionId : string };
-  BarcodeForm : { workId : string, sectionId : string, barcodeId? : string };
+  BarcodeForm : { workId : string, sectionId : string, barcodeId : string };
+  BarcodeNew : { workId : string, sectionId : string };
   Upload : { workId : string, sectionIds : string[] };
 }
 

@@ -6,22 +6,21 @@ import { useNavi } from './main.collect._navi';
 import { useState } from 'react';
 
 
-export function SectionFormScreen() {
+
+export function BarcodeNewScreen() {
 
   const { navi, route } = useNavi();
-  const { workId, sectionId } = route('BarcodeForm').params;
-  const section =  useWorkStore( state => state.works[workId]?.sections[sectionId] );
-  const setSection =  useWorkStore( state => state.setSection );
-  const [ name , setName ] = useState(section?.name);
+  const { workId, sectionId } = route('BarcodeNew').params;
+  const addBarcode = useWorkStore( state => state.addBarcode );
+  const [ barcode, setBarcode ] = useState("");
+  const [ count, setCount ] = useState("");
 
   const back = () => {
     return <BackAction onPress={()=>goback(navi)} />
   }
 
   const save = () => {
-    setSection( workId, sectionId, ( s )=>{
-      s.name = name;
-    })
+    addBarcode( workId, sectionId, barcode, Number(count), true);
     goback(navi);
   }
 
@@ -43,10 +42,10 @@ export function SectionFormScreen() {
           gap : 15,
         }} 
       >
-        <Input label={'섹션명'} value={name} onChangeText={(e)=>setName(e)} />
+        <Input label={'바코드'} value={barcode} onChangeText={setBarcode} />
+        <Input label={'수량'} value={count} onChangeText={setCount} keyboardType='numeric'  />
         <Button  onPress={save} style={{ width : '100%', marginTop : 15 }} >저장</Button>
       </Layout>
-      
     </Content>
   )
 

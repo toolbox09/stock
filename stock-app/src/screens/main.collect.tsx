@@ -5,6 +5,7 @@ import { SectionScreen } from './main.collect.section';
 import { BarcodeScreen } from './main.collect.barcode';
 import { SectionFormScreen } from './main.collect.section-form';
 import { BarcodeFormScreen } from './main.collect.barcode-form';
+import { BarcodeNewScreen } from './main.collect.barcode-new';
 import { UploadScreen } from './main.collect.upload';
 
 export function CollectScreen() {
@@ -20,6 +21,7 @@ export function CollectScreen() {
       <Stack.Screen name='Barcode' component={BarcodeScreen} />
       <Stack.Screen name='SectionForm' component={SectionFormScreen} />
       <Stack.Screen name='BarcodeForm' component={BarcodeFormScreen} />
+      <Stack.Screen name='BarcodeNew' component={BarcodeNewScreen} />
       <Stack.Screen name='Upload' component={UploadScreen} />
     </Stack.Navigator>
   )

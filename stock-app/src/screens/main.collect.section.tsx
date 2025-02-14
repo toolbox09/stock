@@ -76,7 +76,7 @@ export function SectionScreen() {
     <Content>
       <TopNavigation
         alignment='center'
-        title={'섹션'}
+        title={work?.projectName}
         accessoryLeft={back}
         accessoryRight={()=><Button size='small' onPress={()=>addSection(workId)} >추가</Button>}
       />
@@ -91,9 +91,9 @@ export function SectionScreen() {
         >
           전체선택
         </CheckBox>
-        <ButtonGroup size='small' appearance='ghost' >
-          <Button appearance='outline' >선택 내보내기</Button>
-          <Button>전체 내보내기</Button>
+        <ButtonGroup size='small' appearance='outline' >
+          <Button onPress={()=>navi.navigate('Upload', { workId : workId, sectionIds : Object.keys(selected) })} >선택 내보내기</Button>
+          <Button onPress={()=>navi.navigate('Upload', { workId : workId, sectionIds : data.map( _ => _.id ) })} >전체 내보내기</Button>
         </ButtonGroup>
       </Layout>
       <Divider/>

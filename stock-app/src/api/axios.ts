@@ -60,4 +60,4 @@ export const axios = async <T = any>(
   }
 };
 
-axios.baseUrl = "http://192.168.40.171:32773/";
+axios.baseUrl = "http://192.168.40.171:32768/";

@@ -57,6 +57,9 @@ namespace StockApi.Data
         public string GetMatchPath()
             => $"{matchPath}/";
 
+        public string GetMatchPath(string fileName)
+            => $"{matchPath}/{fileName}";
+
 
         #endregion
 

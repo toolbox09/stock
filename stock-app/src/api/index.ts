@@ -1,6 +1,6 @@
 import { Auth, FileInfo, ProjectInfo, ProjectState, Master, Work  } from '@/entities';
 import { axios } from './axios';
-import { CreateProjectRequest } from './io/project';
+import { CreateProjectRequest, UpdateWorkRequest } from './io/project';
 
 
 export const apis = {
@@ -68,6 +68,20 @@ export const apis = {
         params : {
           projectName : projectName,
           masterUrl : masterUrl as any,
+        }
+      })
+    },
+    update :  async ( req : UpdateWorkRequest ) => {
+      return await axios<Work>('work/update',{
+        method : 'POST',
+        body : req,
+      })
+    },
+    collect : async ( projectName : string ) => {
+      return await axios<boolean>('work/collect', {
+        method : 'POST',
+        params : {
+          projectName : projectName,
         }
       })
     }

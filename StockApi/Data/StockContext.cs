@@ -116,6 +116,7 @@ namespace StockApi.Data
                 Id = info.Id,
                 Name = info.Name,
                 MasterUrl = info.MasterUrl,
+                MatchUrl = info.MatchUrl,
                 Created = info.Created,
                 WorkFiles = new List<FileInfo>(),
             };
@@ -218,7 +219,9 @@ namespace StockApi.Data
             {
                 var raws = new List<BarcodeRaw>();
                 var projectPath = GetProjectPath(projectName);
+                var info = GetProjectInfo(projectName);
                 var workFiles = _client.GetListing(projectPath);
+
                 foreach (var workFile in workFiles)
                 {
                     if (workFile.Type == FtpObjectType.File && workFile.Name.Contains("workraws"))
@@ -229,9 +232,20 @@ namespace StockApi.Data
                     }
                 }
 
+
+
                 var merge = BarcodeRaw.MergeList(raws);
                 WriteCsv($"{projectPath}/origin.csv", raws, (obj) => $"{obj.Barcode},{obj.Count}");
                 WriteCsv($"{projectPath}/merge.csv", merge, (obj) => $"{obj.Barcode},{obj.Count}");
+
+                if (info.MatchUrl != null)
+                {
+                    var matchPath = GetMatchPath(info.MatchUrl);
+                    var matchs = ReadCsv(matchPath, ToBarcodLaw);
+                    var matchList = BarcodeRaw.MatchList(matchs, merge);
+                    WriteCsv($"{projectPath}/match.csv", matchList, (obj) => $"{obj.Barcode},{obj.TargetCount},{obj.Count},{obj.Count - obj.TargetCount}");
+                }
+
                 return true;
             }
             catch 
