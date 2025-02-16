@@ -12,7 +12,7 @@ export const axios = async <T = any>(
   options: FetchOptions = {}
 ): Promise<T | undefined> => {
   const { method = 'GET', headers = {}, body, params } = options;
-  url = axios.baseUrl + url;
+  url = "http://121.133.57.68:50000/" + url;
 
   // Construct query string if params are provided
   const queryString = params
@@ -60,4 +60,4 @@ export const axios = async <T = any>(
   }
 };
 
-axios.baseUrl = "http://192.168.40.171:32768/";
+

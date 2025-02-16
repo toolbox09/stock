@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "push:dev": "pnpm build --mode dev && docker build -t sf12go/stock-web:dev -f docker/Dockerfile . && docker push sf12go/stock-web:dev"
+    "push:dev": "pnpm build --mode dev && docker build -t sf12go/stock-web:dev -f docker/Dockerfile . && docker push sf12go/stock-web:dev",
+    "docker:build": "pnpm build --mode dev && docker build -t stockweb:dev -f docker/Dockerfile ."
   },
   "dependencies": {
     "@mantine/core": "^7.16.3",
@@ -17,7 +18,7 @@
     "immer": "^10.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router": "^7.1.5",
+    "react-router-dom": "^7.1.5",
     "vite-tsconfig-paths": "^5.1.4",
     "zustand": "^5.0.3"
   },

@@ -19,10 +19,27 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.leesanghun86.stockapp",
+      "usesCleartextTraffic": true
+
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f46498bb-74ed-42a8-a4d7-23b04642997c"
+      }
+    },
+    "owner": "leesanghun86",
+    "plugins": [
+      "with-rn-bluetooth-classic",
+      ["expo-build-properties",{
+        "android": {
+          "usesCleartextTraffic": true
+        }
+      }]
+    ]
   }
 }

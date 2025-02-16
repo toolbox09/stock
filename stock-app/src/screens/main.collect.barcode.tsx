@@ -1,11 +1,16 @@
-import { useState } from 'react';
-import { Alert } from 'react-native';
+import { useEffect, useState } from 'react';
+import { Alert, Vibration } from 'react-native';
+import { useFocusEffect } from "@react-navigation/native";
 import { TopNavigation, Divider, ListItem, Layout, Button, Icon, Text, Toggle, CheckBox } from '@ui-kitten/components';
 import { Content, SwipeableButton } from '@/components';
 import { SheetOp, BarcodeOp } from '@/entities';
 import { BackAction } from './_components/BackAction';
 import { useNavi } from './main.collect._navi';
-import { useWorkStore } from '@/stores';
+import RNBluetoothClassic, {
+  BluetoothDevice,
+} from 'react-native-bluetooth-classic';
+import { Audio } from "expo-av";
+import { useWorkStore, useBleStore, setReceived } from '@/stores';
 import { useMemo } from 'react';
 import SwipeableFlatList from 'rn-gesture-swipeable-flatlist';
 
@@ -22,9 +27,23 @@ export function BarcodeScreen() {
   const autoAddSection = useWorkStore( state => state.autoAddSection );
   const [ merge, setMerge ] = useState(false);
 
+
   const data = useMemo( () => {
     return barcodes ? SheetOp.list(barcodes) : [];
   },[barcodes])
+
+
+  function handleReceived( barcode : string ) {
+    handleBarcode( barcode, 1 );
+  }
+
+  useFocusEffect(()=>{
+    setReceived(handleReceived);
+    return ()=>{
+      setReceived();
+    }
+  })
+
 
   const back = () => {
     return <BackAction onPress={()=>navi.navigate('Section',{ workId : workId })} />
@@ -49,7 +68,11 @@ export function BarcodeScreen() {
     let matched = true;
     if(work && barcodes ) {
       if(work.master) {
+        // Vibration
         matched = work.master[barcode] ? true : false;
+        if(!matched) {
+          Vibration.vibrate(200);
+        } 
       }
     }
     addBarcode(workId, sectionId, barcode, count, matched);
@@ -69,7 +92,6 @@ export function BarcodeScreen() {
 
   return (
     <Content>
-      <NewFab onPress={handleNew} />
       <TopNavigation
         alignment='center'
         title={work?.sections[sectionId]?.name}
@@ -110,25 +132,5 @@ export function BarcodeScreen() {
         enableOpenMultipleRows={false}
       />
     </Content>
-  )
-}
-
-function NewFab( { onPress } : {  onPress : () => void; } ) {
-  const { navi } = useNavi();
-  return (
-  <Button
-    accessoryLeft={<Icon
-      name='plus-outline'
-    />}
-    style={{
-      bottom: 16,
-      right: 16,
-      position: 'absolute',
-      zIndex : 20000,
-    }}
-    onPress={()=>onPress()}
-  >
-    TEST
-  </Button>
   )
 }

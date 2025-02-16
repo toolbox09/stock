@@ -1,5 +1,5 @@
 import { ThemeProvider } from '@/components';
-import { BrowserRouter } from "react-router";
+import { BrowserRouter } from "react-router-dom";
 import RootRoutes from './pages/routes';
 
      

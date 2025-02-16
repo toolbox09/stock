@@ -13,7 +13,7 @@ echo Building Docker image...
 docker build -t %IMAGE_NAME% docker/Dockerfile .
 
 echo Running new container...
-docker run -d --name %CONTAINER_NAME% -p 8080:8080 %IMAGE_NAME%
+docker run -d --name %CONTAINER_NAME% -p 50001:8080 %IMAGE_NAME%
 
 echo Container started successfully!
 docker ps -a | findstr /I "%CONTAINER_NAME%"

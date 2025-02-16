@@ -1,152 +1,85 @@
-// import { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, Button, FlatList } from 'react-native';
-// import { PermissionsAndroid } from 'react-native';
-// import RNBluetoothClassic, {
-//   BluetoothDevice,
-// } from 'react-native-bluetooth-classic';
-
-/*
-const requestAccessFineLocationPermission = async () => {
-  const granted = await PermissionsAndroid.request(
-    PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-    {
-      title: 'Access fine location required for discovery',
-      message:
-        'In order to perform discovery, you must enable/allow ' +
-        'fine location access.',
-      buttonNeutral: 'Ask Me Later',
-      buttonNegative: 'Cancel',
-      buttonPositive: 'OK',
-    }
-  );
-  return granted === PermissionsAndroid.RESULTS.GRANTED;
-};
+import { useEffect, useMemo, useState } from 'react';
+import { RefreshControl, PermissionsAndroid  } from 'react-native';
+import SwipeableFlatList from 'rn-gesture-swipeable-flatlist';
+import { Content, useRefresh } from '@/components';
+import { TopNavigation, ListItem, Divider, Text, Layout } from '@ui-kitten/components';
+import RNBluetoothClassic, {
+  BluetoothDevice,
+} from 'react-native-bluetooth-classic';
+import { useBleStore } from '@/stores';
 
 
-const BluetoothDeviceList = () => {
-  const [devices, setDevices] = useState<BluetoothDevice[]>([]);
-  const [isScanning, setIsScanning] = useState(false);
+interface BleItemProps {
+  device : BluetoothDevice;
+}
 
-  function onStateChange(event: any) {
-    console.log(event);
+function BleItem( { device } : BleItemProps ) {
+
+  const deviceAddress = useBleStore( state => state.deviceAddress );
+  const reConnect = useBleStore( state => state.connect );
+  const setDeviceAddress = useBleStore( state => state.setDeviceAddress );
+  const [ connecting, setConnecting ] = useState<boolean>(false);
+  const [ connected, setConnected ] = useState<boolean>(false);
+
+  async function init() {
+    const result = await device.isConnected();
+    console.log(result);
+    setConnected(result);
   }
-
-  useEffect(() => {
-
-    RNBluetoothClassic.onStateChanged(onStateChange);
-    async function gets() {
-      const paired = await RNBluetoothClassic.getBondedDevices();
-      setDevices(paired);
-    }
-    requestAccessFineLocationPermission();
-    gets();
-
-  }, []);
-
-  function on( device : BluetoothDevice) {
-
-    RNBluetoothClassic.getConnectedDevices()
-    .then((e)=>{
-      console.log(e);
-    })
-    
-    device.isConnected().then( e => console.log(e) );
-    
-    
-    device.connect()
-     .then(( a )=>{
-      device.onDataReceived((data) => {
-        device.read().then((e)=>{
-          console.log(e);
-        })
-      });
-
-      console.log(a);
-     }).catch( (b)=>{
-      console.log(b);
-     })
-    
-    
-
-  }
-
-
-  return (
-    <View style={{ padding: 20 }}>
-      <Button title={isScanning ? "검색 중..." : "장치 검색"} disabled={isScanning} />
-      <FlatList
-        data={devices}
-        keyExtractor={item=>item.id}
-        renderItem={(item)=> <DeviceItem device={item.item}  /> }
-      >
-      </FlatList>
-    </View>
-  );
-};
-
-function DeviceItem( { device } : { device : BluetoothDevice} ) {
-
-  const [ connecting, setConnecting ] = useState<boolean>();
-  const [ isConnect, setConnect ] = useState<boolean>();
-
-  
 
   async function connect() {
-    try{
-      let connection = await device.isConnected();
-      if(!connection) {
-        setConnecting(true);
-        connection = await device.connect({
-          // connectionType : 'binary',
-        });
-        setConnect(connection);
-      }
+    try {
+      setConnecting(true);
+      await reConnect(device.address);
     }finally {
       setConnecting(false);
-    }
-
-  }
-
-  // function onReceivedData() {
-  // }
-
-  async function performRead() {
-
-    let available = await device.available();
-    if(available > 0) {
-      for( let i = 0; i < available; i++ ){
-        const data = await device.read();
-        console.log(data);
-      }
-
     }
   }
 
   useEffect(()=>{
-    setInterval(async () => await performRead(), 5000);
-
-  },[device])
+    init();
+  },[]) 
 
   return (
-    <Button color={ isConnect ? '#000' : '#ff0' } title={ connecting ? '연결중' : `DEV-${device.name}` } onPress={connect}  />
+  <ListItem 
+    title={ device.name}
+    description={device.address}
+    accessoryRight={ <Text>{connecting ? '로딩중' : ''}</Text> }
+    style={{ backgroundColor : connected ? 'rgba(18, 184, 134, .12)' : undefined }}
+    onPress={connect} 
+  />
   )
 }
-*/
 
 export function MasterScreen() {
 
-  return (
-    <View style={styles.container}>
-      <Text>asd</Text>
-    </View>
-  );
-}
+  const devices = useBleStore( state => state.devices );
+  const refreshList = useBleStore( state => state.refreshList );
+  const [isScanning, setIsScanning] = useState(false);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  async function refresh() {
+    try{
+      setIsScanning(true);
+      await refreshList();
+    }finally {
+      setIsScanning(false);
+    }
+  }
+
+  return (
+    <Content>
+      <TopNavigation
+        alignment='center'
+        title={'스캐너'}
+      />
+      <Divider/>
+      <SwipeableFlatList
+        refreshControl={<RefreshControl refreshing={isScanning} onRefresh={refresh} />}
+        data={devices}
+        keyExtractor={item=>item.address}
+        ItemSeparatorComponent={Divider}
+        renderItem={({ item })=><BleItem device={item} />}
+      />
+    </Content>
+  );
+};
