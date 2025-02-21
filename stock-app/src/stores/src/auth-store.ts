@@ -1,6 +1,8 @@
 import { create } from 'zustand';
+import { persist, createJSONStorage } from 'zustand/middleware';
 import { Auth } from '@/entities';
 import { apis } from '@/api';
+import { Storage } from './storage';
 
 interface State {
   auth? : Auth;
@@ -12,13 +14,10 @@ interface Action {
 }
 
 const init : State = {
-  auth : {
-    id : "",
-    keyword : "A",
-  }
 }
 
-export const useAuthStore = create<State & Action >(
+export const useAuthStore = create(
+  persist<State & Action>(
     (set, get) => ({
       ...init,
       login :  async (id : string, password : string ) => {
@@ -34,4 +33,9 @@ export const useAuthStore = create<State & Action >(
         set( state => ({ ...state, auth : undefined }) )
       }
     }),
+    {
+      name: 'sotck-DEV-auth-storage',
+      storage : createJSONStorage(()=>Storage), 
+    }
   )
+)

@@ -213,9 +213,12 @@ namespace StockApi.Data
             return WriteCsv(path, raws, (obj) =>$"{obj.Barcode},{obj.Count}");
         }
 
-        public bool Collect(string projectName) 
+        public bool Collect(string projectName)
         {
-            try 
+            if (projectName == null)
+                return false;
+
+            try
             {
                 var raws = new List<BarcodeRaw>();
                 var projectPath = GetProjectPath(projectName);

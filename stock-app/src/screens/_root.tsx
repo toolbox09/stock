@@ -21,6 +21,5 @@ export function RootScreen() {
       <Stack.Screen name='NewWork' component={NewWorkScreen}  options={{ headerShown : false }}/>
     </Stack.Navigator>
   </>
-
-    : <LoginScreen/>
+  : <LoginScreen/>
 }

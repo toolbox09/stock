@@ -7,12 +7,14 @@ interface FetchOptions {
   params?: Record<string, string | number | boolean>;
 }
 
+const baseUrl = "http://192.168.40.171:50000/";
+// const baseUrl = "http://121.133.57.68:50000/";
 export const axios = async <T = any>(
   url: string,
   options: FetchOptions = {}
 ): Promise<T | undefined> => {
   const { method = 'GET', headers = {}, body, params } = options;
-  url = "http://121.133.57.68:50000/" + url;
+  url = baseUrl + url;
 
   // Construct query string if params are provided
   const queryString = params

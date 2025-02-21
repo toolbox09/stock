@@ -42,8 +42,6 @@ export function DetailScreen() {
     }finally {
       setUploading(false);
     }
-
-
   }
 
 

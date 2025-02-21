@@ -12,11 +12,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddHttpsRedirection(options =>
-{
-    options.HttpsPort = 8081;
-});
-
 builder.AddDateTimeJson("yyyy/MM/dd HH:mm:ss");
 builder.AddAllowCors();
 
@@ -31,8 +26,6 @@ var app = builder.Build();
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

@@ -35,7 +35,7 @@ namespace StockApi.Controllers
             return Ok(_context.UpdateWork(request.ProjectName, request.FileName, request.Raws));
         }
 
-        [HttpPost("collect")]
+        [HttpGet("collect")]
         public IActionResult Collect(string projectName)
         {
             return Ok(_context.Collect(projectName));

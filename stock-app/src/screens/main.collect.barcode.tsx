@@ -9,7 +9,6 @@ import { useNavi } from './main.collect._navi';
 import RNBluetoothClassic, {
   BluetoothDevice,
 } from 'react-native-bluetooth-classic';
-import { Audio } from "expo-av";
 import { useWorkStore, useBleStore, setReceived } from '@/stores';
 import { useMemo } from 'react';
 import SwipeableFlatList from 'rn-gesture-swipeable-flatlist';
