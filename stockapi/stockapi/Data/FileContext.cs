@@ -18,7 +18,9 @@ public class FileContext : IDisposable
 
   public FileContext() 
   {
-    client = new FtpClient("121.133.57.68","counter","1234");
+    // client = new FtpClient("121.133.57.68","counter","1234");
+    client = new FtpClient("site31613.siteasp.net", "site31613", "y%9W5B?dCa4!");
+    
     client.AutoConnect();
   }
   public void Dispose()
